@@ -1,7 +1,7 @@
 "use client";
 import React, { ReactNode, MouseEvent, useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import './Modal.css';
+import './modal.css';
 import { FormImg } from '@/components/server';
 import { FormButton } from '@/components/client';
 import { useWallet } from '@suiet/wallet-kit';
