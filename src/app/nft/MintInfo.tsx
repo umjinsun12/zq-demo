@@ -146,8 +146,8 @@ const MintInfo = (): ReactElement => {
             <FormText fontType="B.20">12.81%</FormText>
           </StyledCardItem>
           <StyledCardItem>
-            <FormText fontType="B.14">Zquilibrium Daily Rewards</FormText>
-            <FormText fontType="B.20">$ 3.51</FormText>
+            <FormText fontType="B.14">My Zquilibrium Rewards</FormText>
+            <FormText fontType="B.20">$ 0</FormText>
           </StyledCardItem>
         </Row>
       </Card>
