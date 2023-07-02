@@ -60,7 +60,7 @@ const MySummary = (): ReactElement => {
       setTotalStake(totalStake);
 
       if(zqcnt > 0){
-        setRewards(100);
+        setRewards(36.75);
       }
 
       console.log(totalStake);

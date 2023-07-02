@@ -111,7 +111,7 @@ const StakeZqual = (): ReactElement => {
       setZqualValue(totalStake);
 
       if(zqcnt > 0){
-        setRewards(100);
+        setRewards(36.75);
       }
 
       console.log(totalStake);

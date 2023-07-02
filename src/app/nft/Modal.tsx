@@ -108,10 +108,10 @@ const Modal = ({ onClose, onSuccessModalOpen, children, title }: ModalProps): JS
 
     useEffect(() => {
         // 계산 공식
-        const zqValue = coinInput * 0.9995; // 이것은 예시입니다. 실제 계산식을 적용해주세요.
+        const zqValue = coinInput * 0.999768; // 이것은 예시입니다. 실제 계산식을 적용해주세요.
         const fundingFee = zqValue * 0.05;
-        const btcValue = (zqValue-fundingFee) / 2;
-        const btcShort = (zqValue-fundingFee) / 2;
+        const btcValue = (coinInput) * 0.000232;
+        const btcShort = (zqValue-fundingFee);
         const totalValue = zqValue;
     
         setEstimatedZQValue(parseFloat(zqValue.toFixed(2)));
@@ -167,16 +167,16 @@ const Modal = ({ onClose, onSuccessModalOpen, children, title }: ModalProps): JS
                             <div className="zq-wrapper">
                             <div className="zq-title">Your Zquilibrium Value</div>
                             <div className="zq-item">
-                                <div className="zq-name">Your Flat BTC Value</div>
-                                <div className="zq-value">{formatCurrency(flatBTCValue)}</div>
-                            </div>
-                            <div className="zq-item">
-                                <div className="zq-name">Your Futures BTC Short</div>
+                                <div className="zq-name">Derivatives Delta Neutral Position</div>
                                 <div className="zq-value">{formatCurrency(futuresBTCShort)}</div>
                             </div>
                             <div className="zq-item">
-                                <div className="zq-name">Reserve for Funding Fee</div>
+                                <div className="zq-name">Reserve for Funding Rate</div>
                                 <div className="zq-value">{formatCurrency(reserveForFundingFee)}</div>
+                            </div>
+                            <div className="zq-item">
+                                <div className="zq-name">Zquilibrium Transaction Fee</div>
+                                <div className="zq-value">{formatCurrency(flatBTCValue)}</div>
                             </div>
                             <div className="zq-total">
                                 <div className="zq-total-text">Total</div>
