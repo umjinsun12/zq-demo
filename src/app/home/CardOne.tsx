@@ -77,8 +77,8 @@ const CardOne = (): ReactElement => {
         <FormText fontType="R.24">$ {formatCurrency(29380 + usdcPoolValue + 24736 + poolValue)}</FormText>
       </StyledCardItem>
       <StyledCardItem>
-        <FormText fontType="R.14">Total Locked xZquilibrium</FormText>
-        <FormText fontType="R.24">$ {formatCurrency(24736 + poolValue)}</FormText>
+        <FormText fontType="R.14">Total Minted Zquilibrium</FormText>
+        <FormText fontType="R.24">{formatCurrency(127)}</FormText>
       </StyledCardItem>
       <StyledCardItem>
         <FormText fontType="R.14">Minimum Value To Mint Zquilibrium</FormText>

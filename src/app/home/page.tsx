@@ -70,7 +70,7 @@ const Home = (): ReactElement => {
         </View>
         <View className="gap-5 flex-1">
           <ChartOne text='Total Value Locked' value={29380 + usdcPoolValue + 24736 + poolValue} />
-          <ChartOne text='Total Locked xZquilibrium' value={24736 + poolValue} />
+          <ChartOne text='Total Minted Zquilibrium' value={127} />
           <ChartOne text='Total Locked USDC' value={29380 + usdcPoolValue}/>
         </View>
       </Row>
