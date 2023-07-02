@@ -19,4 +19,5 @@
 .wkit-button {
     height: 40px;
     padding : 5px 16px;
+    width: 150px !important;
 }
