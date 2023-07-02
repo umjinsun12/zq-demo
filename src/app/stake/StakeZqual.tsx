@@ -15,6 +15,7 @@ import { COLOR } from '@/consts'
 import { useWallet } from '@suiet/wallet-kit';
 import { contractAddress, contractMethod, contractModule, zqPoolAddress, zqualCoinType } from '@/consts/pool';
 import { JsonRpcProvider, TransactionBlock, testnetConnection } from '@mysten/sui.js';
+import SuccessModal from '../nft/SuccessModal';
 
 const StakeZqual = (): ReactElement => {
   const wallet = useWallet();
@@ -25,6 +26,8 @@ const StakeZqual = (): ReactElement => {
   const [xzqualValue, setXzqualValue] = useState<number>(0);
   const [zqualValue, setZqualValue] = useState<number>(0);
   const [rewards, setRewards] = useState<number>(0);
+
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   useEffect(() => {
     setXzqualValue(zqualAmount * 1.0317);
@@ -62,7 +65,7 @@ const StakeZqual = (): ReactElement => {
       transactionBlock: tx,
     });
     console.log('executeMoveCall success', resData);
-    alert('Zqualizer Mint success')
+    setShowSuccessModal(true);
     }catch(e) {
       console.error('executeMoveCall failed', e);
       alert('executeMoveCall failed (see response in the console)');
@@ -205,6 +208,11 @@ const StakeZqual = (): ReactElement => {
           <FormText>Locked for 120 Days</FormText>
         </Card>
       </Row>
+      {showSuccessModal &&
+        <SuccessModal onClose={() =>setShowSuccessModal(false)} title='Stake' description='Your ZQUAL Token has been staked successfully. Check and refresh webpage as it might not appear immediately.'>
+            Hello from the modal!
+        </SuccessModal>
+      }
     </View>
   )
 }

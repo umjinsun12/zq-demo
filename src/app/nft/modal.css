@@ -33,6 +33,10 @@
     width: 100%;
   }
   .modal-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 472px;
     color: var(--text-gray, #BCBCCC);
     text-align: center;
     font-size: 24px;
@@ -226,3 +230,31 @@
   .mint-btn{
     width: 100%;
   }
+
+
+  .success-modal-wrapper {
+    width: 480px;
+    height: 178px;
+  }
+
+  .title-content {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 이미지와 텍스트 사이의 간격 */
+}
+
+
+  .description {
+    width: 472px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: var(--dark-mode-core-200, #BCBCCC);
+    font-size: 14px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.42px;
+    text-align: left;
+    margin-top : 25px;
+}

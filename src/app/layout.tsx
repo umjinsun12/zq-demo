@@ -37,6 +37,7 @@ export default function RootLayout({
           </View>
         </AppProvider>
         <div id="modal-root"></div>
+        <div id="success-modal-root"></div>
       </body>
     </html>
   )

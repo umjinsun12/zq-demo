@@ -10,11 +10,12 @@ import { contractAddress, contractMethod, contractModule, usdcCoinType, usdcPool
 
 interface ModalProps {
     onClose: () => void;
+    onSuccessModalOpen: ()=> void;
     children: ReactNode;
     title?: string;
 }
 
-const Modal = ({ onClose, children, title }: ModalProps): JSX.Element => {
+const Modal = ({ onClose, onSuccessModalOpen, children, title }: ModalProps): JSX.Element => {
     const wallet = useWallet();
     const provider = new JsonRpcProvider(testnetConnection);
     
@@ -85,13 +86,13 @@ const Modal = ({ onClose, children, title }: ModalProps): JSX.Element => {
           transactionBlock: tx,
         });
         console.log('executeMoveCall success', resData);
-        alert('Zqualizer Mint success')
+        onSuccessModalOpen();
         }catch(e) {
           console.error('executeMoveCall failed', e);
           alert('executeMoveCall failed (see response in the console)');
         }
-
         onClose();
+        
     }
       
 
