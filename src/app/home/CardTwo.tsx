@@ -25,8 +25,8 @@ const CardOne = (): ReactElement => {
         <FormText fontType="R.24">Earn rewards in USDT & ZQUAL</FormText>
       </StyledCardItem>
       <StyledCardItem>
-        <FormText fontType="R.14">Fixed USDT Rewards APR</FormText>
-        <FormText fontType="R.24">5.00%</FormText>
+        <FormText fontType="R.14">Estimated Funding Rate APR</FormText>
+        <FormText fontType="R.24">12.71%</FormText>
       </StyledCardItem>
       <StyledCardItem>
         <FormText fontType="R.14">Flexible ZQUAL Rewards APR</FormText>
