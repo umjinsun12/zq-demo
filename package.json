@@ -1,0 +1,43 @@
+{
+  "name": "ut-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
+  },
+  "dependencies": {
+    "@mysten/sui.js": "^0.36.0",
+    "@suiet/wallet-kit": "^0.2.15",
+    "@tabler/icons-react": "^2.18.0",
+    "autoprefixer": "10.4.14",
+    "chart.js": "^4.3.0",
+    "lodash": "^4.17.21",
+    "next": "13.4.1",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.10",
+    "tailwindcss": "3.3.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.194",
+    "@types/node": "20.1.0",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
+    "eslint": "^8.40.0",
+    "eslint-config-next": "13.4.1",
+    "eslint-config-prettier": "^8.8.0",
+    "typescript": "5.0.4"
+  }
+}

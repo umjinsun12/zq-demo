@@ -1,0 +1,228 @@
+.modal-wrapper {
+    width: 480px;
+    height: 548px;
+  }
+  
+  .modal {
+    height:100%;
+    width:100%;
+    border-radius: 20px;
+    background: var(--dark-mode-core-800, #262632);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .modal-title{
+    color: var(--text-gray, #BCBCCC);
+    text-align: center;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.72px;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+
+  .modal-input {
+    width: 436px;
+    height: 110px;
+    border-radius: 20px;
+    background: var(--dark-mode-core-900, #0D0D17);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .coin-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .coin-select {
+    display: inline-flex;
+    padding: 8px;
+    align-items: center;
+    gap: 7px;
+    width: 100px;
+    border-radius: 99px;
+    background: var(--dark-mode-core-800, #262632);
+    color: var(--white, #FFF);
+  }
+  
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .coin-input {
+    color: var(--white, #FFF);
+    text-align: right;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.6px;
+    background: transparent;
+    border: none;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  
+  .estimated-value {
+    color: var(--dark-mode-core-200, #BCBCCC);
+    text-align: right;
+    font-size: 14px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.42px;
+    margin-top: 5px;
+  }
+  
+  .asset-value {
+    color: var(--dark-mode-core-600, #585865);
+    text-align: left;
+    font-size: 12px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.36px;
+  }
+
+
+
+
+/*zq wrapper*/
+  .down-img{
+    margin: 20px 20px;
+  }
+
+  .zq-wrapper {
+    width: 436px;
+    display: flex;
+    padding: 16px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    background: var(--dark-mode-core-900, #0D0D17);
+  }
+  
+  .zq-title {
+    color: var(--dark-mode-core-200, #BCBCCC);
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.48px;
+  }
+  
+  .zq-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .zq-name {
+    color: var(--dark-mode-core-400, #848492);
+    font-size: 14px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.42px;
+  }
+  
+  .zq-value {
+    color: #FFF;
+    text-align: right;
+    font-size: 14px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.84px;
+  }
+  
+  .zq-total {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .zq-total-text {
+    color: var(--dark-mode-core-200, #BCBCCC);
+    text-align: right;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.42px;
+  }
+  
+  .zq-total-value {
+    color: var(--white, #FFF);
+    text-align: right;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.6px;
+  }
+
+
+  .mint-btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    width: 436px;
+  }
+
+  .mint-btn{
+    width: 100%;
+  }
