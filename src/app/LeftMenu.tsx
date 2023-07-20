@@ -28,6 +28,12 @@ const menuList = [
     icon: '/icons/ic-stake.svg',
     iconActive: '/icons/ic-stake-active.svg',
   },
+  {
+    title: 'Wormhole Bridge',
+    href: RoutesEnum.BRIDGE,
+    icon: '/icons/ic-governance.svg',
+    iconActive: '/icons/ic-governance-active.svg',
+  }
 ]
 
 const LeftMenu = (): ReactElement => {
